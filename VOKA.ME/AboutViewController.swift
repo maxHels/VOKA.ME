@@ -22,7 +22,6 @@ class AboutViewController: UIViewController {
     private var mailBtn: UIButton!
     private var scrollView: UIScrollView!
     
-
     @IBAction func openMailApp(_ sender: Any) {
         let email = "foo@bar.com"
         if let url = URL(string: "mailto:\(email)") {
@@ -67,6 +66,7 @@ class AboutViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         scrollView = setupScrollView()
         view.addSubview(scrollView)
         logoImageView = setupLogoImageView()
@@ -77,7 +77,8 @@ class AboutViewController: UIViewController {
         scrollView.addSubview(versionLabel)
         descriptionView = setupDescriptionView()
         scrollView.addSubview(descriptionView)
-        
+        descriptionLabel = setupDescriptionLabel()
+        scrollView.addSubview(descriptionLabel)
     }
     
     private func setupScrollView() -> UIScrollView {
@@ -115,8 +116,14 @@ class AboutViewController: UIViewController {
         return view
     }
     
+    private func setupDescriptionLabel() -> UILabel {
+        let label = UILabel()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Всем привет, я рад видеть Вас на нашем сайте, посвященному всему вдохновляющему в окружающем нас мире./nЯ буду очень рад если Вы найдете для себя что то интересное на моем сайте, а так же я готов разместить Ваш материал. Для этого достаточно связаться со мной через контактную форму."
+        return label
+    }
+    
     private func setupConstraints() {
-        
         scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         scrollView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
@@ -136,16 +143,16 @@ class AboutViewController: UIViewController {
         descriptionView.topAnchor.constraint(equalTo: versionLabel.bottomAnchor, constant: 16).isActive = true
         descriptionView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
 
-        descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
         descriptionLabel.leftAnchor.constraint(equalTo: descriptionView.leftAnchor).isActive = true
         descriptionLabel.rightAnchor.constraint(equalTo: descriptionView.rightAnchor).isActive = true
         descriptionLabel.topAnchor.constraint(equalTo: descriptionView.topAnchor, constant: 16).isActive = true
+        descriptionLabel.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
         
-        buttonRow.translatesAutoresizingMaskIntoConstraints = false
-        buttonRow.leftAnchor.constraint(equalTo: descriptionView.leftAnchor, constant: 0).isActive = true
-        buttonRow.rightAnchor.constraint(equalTo: descriptionView.rightAnchor, constant: 0).isActive = true
-        buttonRow.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 16).isActive = true
-        buttonRow.bottomAnchor.constraint(equalTo: descriptionView.bottomAnchor).isActive = true
+        //buttonRow.translatesAutoresizingMaskIntoConstraints = false
+        //buttonRow.leftAnchor.constraint(equalTo: descriptionView.leftAnchor, constant: 0).isActive = true
+        //buttonRow.rightAnchor.constraint(equalTo: descriptionView.rightAnchor, constant: 0).isActive = true
+        //buttonRow.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 16).isActive = true
+        //buttonRow.bottomAnchor.constraint(equalTo: descriptionView.bottomAnchor).isActive = true
     }
 
 }
