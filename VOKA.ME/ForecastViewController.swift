@@ -27,7 +27,7 @@ class ForecastViewController: UIViewController {
     }
     
     func setForecastText(){
-        UIView.transition(with: view, duration: 1.0, options: .transitionCrossDissolve, animations: {
+        UIView.transition(with: view, duration: 1.0, options: .showHideTransitionViews, animations: {
             self.labelContainer.isHidden = false
         })
         var forecasts = ["Если Вы проявите инициативу, успех не заставит себя ждать.","Ваши надежды и планы сбудутся сверх всяких ожиданий.","Вам пора отдохнуть.","Вам предлагается мечта всей жизни. Скажите да!","Вас ждет приятный сюрприз.","Время – ваш союзник, лучше отложить принятие важного решения хотя бы на день.","Время и терпение,  вас ждут много сюрпризов!","Время осушит все слезы и исцелит все раны."]

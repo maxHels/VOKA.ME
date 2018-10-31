@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -100,93 +100,10 @@
                     <view key="view" contentMode="scaleToFill" id="FpI-gM-Kya">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aboutvoka" translatesAutoresizingMaskIntoConstraints="NO" id="3NE-Qc-6Tm">
-                                <rect key="frame" x="127" y="20" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VOKA.ME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGS-jl-wxG">
-                                <rect key="frame" x="150" y="148" width="75" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="version 1.0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jr4-BU-jHy">
-                                <rect key="frame" x="140" y="177" width="95" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pNG-wq-HVm" customClass="CardView" customModule="VOKA_ME" customModuleProvider="target">
-                                <rect key="frame" x="6" y="237" width="355" height="329"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ba-83-OCW">
-                                        <rect key="frame" x="20" y="20" width="327" height="248"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <string key="text">Всем привет, я рад видеть Вас на нашем сайте, посвященному всему вдохновляющему в окружающем нас мире.
-
-Я буду очень рад если Вы найдете для себя что то интересное на моем сайте, а так же я готов разместить Ваш материал. Для этого достаточно связаться со мной через контактную форму.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="bL0-vE-w7E">
-                                        <rect key="frame" x="25" y="273" width="294" height="36"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjS-u8-ibg">
-                                                <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
-                                                <state key="normal" image="facebook"/>
-                                                <connections>
-                                                    <action selector="openFb:" destination="MKH-MX-V1Y" eventType="touchUpInside" id="nrq-qI-cIS"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eQ-k4-GaL">
-                                                <rect key="frame" x="86" y="0.0" width="36" height="36"/>
-                                                <state key="normal" image="twitter"/>
-                                                <connections>
-                                                    <action selector="openTwitter:" destination="MKH-MX-V1Y" eventType="touchUpInside" id="i5Q-AX-9cy"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igi-Uv-Dm6">
-                                                <rect key="frame" x="172" y="0.0" width="36" height="36"/>
-                                                <state key="normal" backgroundImage="vk"/>
-                                                <connections>
-                                                    <action selector="openVk:" destination="MKH-MX-V1Y" eventType="touchUpInside" id="X64-sG-QfC"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lmb-9g-KvG">
-                                                <rect key="frame" x="258" y="0.0" width="36" height="36"/>
-                                                <state key="normal" image="mail"/>
-                                                <connections>
-                                                    <action selector="openMail:" destination="MKH-MX-V1Y" eventType="touchUpInside" id="1sn-qY-0J0"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="zSh-ae-ueF"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="О проекте" image="info" id="0ud-US-am5"/>
-                    <connections>
-                        <outlet property="buttonRow" destination="bL0-vE-w7E" id="yRy-BS-ear"/>
-                        <outlet property="descriptionLabel" destination="1Ba-83-OCW" id="wKn-LJ-KAC"/>
-                        <outlet property="descriptionView" destination="pNG-wq-HVm" id="ehX-XL-kDS"/>
-                        <outlet property="fbBtn" destination="HjS-u8-ibg" id="7Ns-QD-KdW"/>
-                        <outlet property="logoImageView" destination="3NE-Qc-6Tm" id="uLj-hs-ZF4"/>
-                        <outlet property="mailBtn" destination="Lmb-9g-KvG" id="R0Y-Fg-pcq"/>
-                        <outlet property="titleLabel" destination="gGS-jl-wxG" id="68E-xZ-p2U"/>
-                        <outlet property="twitterBtn" destination="9eQ-k4-GaL" id="Uqi-wa-LdW"/>
-                        <outlet property="versionLabel" destination="jr4-BU-jHy" id="WKa-yb-R3R"/>
-                        <outlet property="vkBtn" destination="igi-Uv-Dm6" id="xPr-2l-d08"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Kr-l0-22l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -213,14 +130,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="aboutvoka" width="90" height="90"/>
         <image name="articles" width="25.600000381469727" height="25.600000381469727"/>
-        <image name="facebook" width="36" height="36"/>
         <image name="horoscope" width="25.600000381469727" height="25.600000381469727"/>
         <image name="info" width="25.600000381469727" height="25.600000381469727"/>
-        <image name="mail" width="36" height="36"/>
-        <image name="twitter" width="36" height="36"/>
-        <image name="vk" width="36" height="36"/>
         <namedColor name="labelGreen">
             <color red="0.27058823529411763" green="0.63137254901960782" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
